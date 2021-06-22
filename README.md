@@ -6,7 +6,7 @@ This Web Application can be used for food blogging Purposes.
 
 ## Features 🚀
 
-- Nice Looking and minimals UI.
+- Nice Looking and minimal UI.
 - Will Be helpfull in finding good restraunts
 - added map section for every entry
 - hover animations
