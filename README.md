@@ -45,20 +45,20 @@ Also if you like this project please **⭐ Star** this repo.
 
 ## Snapshots 📸
 
-![snap1](/snapshots/s1.png)
+![snap1](/Snapshots/s1.png)
 
-![snap1](/snapshots/s2.png)
+![snap2](/Snapshots/s2.png)
 
-![snap1](/snapshots/s3.png)
+![snap3](/Snapshots/s3.png)
 
-![snap1](/snapshots/s4.png)
+![snap4](/Snapshots/s4.png)
 
-![snap1](/snapshots/s5.png)
+![snap5](/Snapshots/s5.png)
 
-![snap1](/snapshots/s6.png)
+![snap6](/Snapshots/s6.png)
 
-![snap1](/snapshots/s7.png)
+![snap7](/Snapshots/s7.png)
 
-![snap1](/snapshots/s8.png)
+![snap8](/Snapshots/s8.png)
 
 <h2> Thank You 🙏</h2>
