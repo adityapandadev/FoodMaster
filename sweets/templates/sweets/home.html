@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar  w3-card w3-left-align w3-large nav1">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/sweets/home/" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#About" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="#Contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Suggest</a>
+    </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/sweets/home/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#About" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="#Contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Suggest</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container  w3-center mycontainer" style="padding:170px 20px">
+<div>
+{% if request.GET.msg %}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+    </button>
+    <strong>Your response has been  {{ request.GET.msg }} !! </strong>
+</div>
+{% endif %}
+
+  <h1 style="color: white" class="w3-margin w3-jumbo w3-animate-top">FoodMaster</h1>
+  <p style="color: white" class="w3-xlarge w3-animate-left">Wake Up it's Food O'clock</p>
+<a href="/sweets/sweetshop/"> <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-animate-bottom">Explore</button></a> 
+</header>
+<br>
+<!-- About Heading -->
+<h1 class="w3-center h1about" id="About">About</h1>
+
+<!-- About -->
+<br>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm sm1">
+		<div class="card text-center" style="width: 20rem;">
+		  <div class="card-body">
+			    <h1 class="card-title">Our-Motto</h1>
+			    <p class="card-text">
+			    	We give You a list of Restraunts that makes you feel alive with its Interior.Food that nourishes and Energises,fuelling you with the Good stuff.so You can be Out there enjoying the things you love.
+			    	<br><br><br>
+			    	<b>-- Feed you with goodness --</b>
+			    	
+
+
+			    </p>
+			   
+		  </div>
+</div>
+
+    </div>
+    <div class="col-sm sm1">
+			     <div class="card text-center w3-center" style="width: 20rem;">
+					  <div class="card-body">
+						    <h1 class="card-title">Offerings</h1>
+						    <p class="card-text">
+						    	From irresistible appetizers and platters to sublime entrees and desserts,We have got you covered .Wide content menu and foods which are best in your town.
+						    	<br><br><br><br>
+						    	<b>-- Good Food Good Life --</b>  
+
+
+
+						    </p>
+						   
+					  </div>
+			</div>
+    </div>
+    <div class="col-sm sm1">
+			     <div class="card text-center" style="width: 20rem;">
+					  <div class="card-body">
+						    <h1 class="card-title">Know Us.</h1>
+						    <p class="card-text">
+						    	FoodMaster is a Team of foodies,Who satisfies their wanderlust for food by visiting good and Famous Restraunts,Cafes,Food stalls,and Dabhas and love to share our Experience with you so you can also sattisfy wanderlust for Food.
+						    	<br><br>
+						    	<b>-- Food brings Together --</b>
+						    </p>
+						   
+					  </div>
+			</div>
+    </div>
+  </div>
+</div>
+
+<!--Best Restraunts-->
+<br>
+<h1 class="w3-center h1about">Best Interiors</h1>
+<br>
+<div class="row">
+   <div class="col-sm-6">
+      
+        
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner carousel1">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/images/int1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/int2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/int3.jpg" alt="Third slide">
+    </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/int4.jpg" alt="Third slide">
+    </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/int5.jpg" alt="Third slide">
+    </div>
+  </div>
+ 
+  
+</div>
+
+ </div>
+   
+   <div class="col-sm-5 para1">
+   	<br><br>
+       <h1 align="center" id="para1head">"Importance of Interior"</h1>
+       <p id="para1content">A good interior is responsible for the mood and good experience of the custumer.With the good and unique interior the restraunts is capable of attracting lots of peoples.So in FoodMaster we choose the foodhub which have good and divine interiors so you can spend you quality time while fuelling yourself with good food. </p>
+
+   </div>
+  </div>
+  <!-- End Best Restraunts -->
+
+
+  <!-- Good food -->
+  <br><br>
+<h1 class="w3-center h1about">Good Food</h1>
+<br>
+<div class="row">
+	<div class="col-sm-5 para2">
+   	<br><br>
+       <h1 align="center" id="para1head">"Importance of Good Food"</h1>
+       <p id="para1content">A good Food is responsible for the mood and good experience of the custumer.With the good and unique Food the restraunts is capable of attracting lots of peoples.So in FoodMaster we choose the foodhub which have good and divine Food so you can spend you quality time while fuelling yourself with good food. </p>
+
+   </div>
+   <div class="col-sm-6">
+      
+        
+
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner carousel2">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/static/images/food1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/food2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/food3.jpg" alt="Third slide">
+    </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/food4.jpg" alt="Third slide">
+    </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="/static/images/food5.jpg" alt="Third slide">
+    </div>
+  </div>
+ 
+</div>
+
+ </div>
+   
+</div>
+
+<!-- End of Good food -->
+
+<!-- Image Section -->
+<br><br>
+<h1 class="w3-center h1about">Food Quotes</h1><br>
+<div class="shakeimage">
+<div class="row">
+	<div class="col-sm">
+		<img src="/static/images/q1.jpg" width="300px" height="300px" alt="img1" id="img1">
+	</div>
+	<div class="col-sm">
+		<img src="/static/images/q2.jpg" width="300px" height="300px" alt="img2" id="img2">
+	</div>
+	<div class="col-sm">
+		<img src="/static/images/q3.jpg" width="300px" height="300px" alt="img3" id="img3">
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-sm">
+		<img src="/static/images/q4.jpg" width="300px" height="300px" alt="img4" id="img4">
+	</div>
+	<div class="col-sm">
+		<img src="/static/images/q5.jpg" width="300px" height="300px" alt="img5" id="img5">
+	</div>
+	<div class="col-sm">
+		<img src="/static/images/q6.jpg" width="300px" height="300px" alt="img6" id="img6">
+	</div>
+	
+</div>
+</div>
+<br>
+<h1 class="w3-center h1about">******</h1><br>
+<br>
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-padding-64 stats">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">100+</span>
+    <br><h3>Restraunt visited</h3>
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5+</span>
+    <br><h3>Cities Covered</h3>
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">10+</span>
+    <br><h3>Events Organized</h3>
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">15+</span>
+    <br><h3>Team Members</h3>
+  </div>
+</div>
+
+<br>
+<!-- End of Promos -->
+
+<!-- Contact Container -->
+<br>
+<div id="Contact">
+<h1 class="w3-center h1about">Contact</h1><br>
+
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Invite Us</span></div>
+      <h3>Adress</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Raipur, CG</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/sweets/contact/submit" method="post">
+	{% csrf_token %}
+
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <button type="submit" class="w3-button w3-right sendbtn">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div><br><br>
+<!-- End Of contact -->
+
+
+
+
+
+{% endblock %}

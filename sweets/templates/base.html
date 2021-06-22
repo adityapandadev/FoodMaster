@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FoodMaster</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/static/vender/bs/css/bootstrap.min.css" rel="stylesheet" />
+<script src="/static/vender/jquery-3.3.1.min.js"></script>
+<script src="/static/vender/popper.min.js"></script>
+<script src="/static/vender/bs/js/bootstrap.min.js"></script>
+<link href="/static/vender/fa/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" type="text/css" href="/static/vender2/w3.css">
+<link href="/static/style.css" rel="stylesheet" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+<!--   <h1>FoodMater.Com</h1>
+<h2>Wake up it's Food O' clock</h2>
+<a href="/sweets/home/">Home</a>
+<a href="/sweets/sweetshop/">Sweetshop List</a>-->
+{% block content %}
+{% endblock %}
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-black" href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-black" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-black" href="#" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-black" href="#" title="instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-black " href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+ 
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

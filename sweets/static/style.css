@@ -1,0 +1,228 @@
+a:hover{
+	text-decoration:none;
+}
+.mycontainer{
+  background: url("/static/images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px;
+  background-position: center;
+
+
+}
+.nav1{
+	background-color: #F13E3E;
+	color:white;
+}
+.h1about{
+	color: white;
+	background-color: #F13E3E;
+	border-radius: 6px 6px 6px 6px;
+	padding: 10px;
+
+}
+.container-fluid{
+	background-color: #F13E3E ;
+	height: auto;
+
+}
+.sm1{
+	padding: 20px;
+	padding-left: 70px;
+
+}
+.card-body{
+	height: 370px;
+		box-shadow: 8px 8px 8px ;
+
+}
+.card-title{
+	text-shadow: 2px 2px 2px #F13E3E;
+	font-size: 45px;
+}
+.card-text{
+	font-size: 18px;
+	font-weight: bold;
+
+
+}
+.carousel1{
+	
+	
+	box-shadow: 8px 8px 8px;
+	margin-left: 32px;
+
+
+
+}
+.para1{
+	border: 8px solid #F13E3E;
+	background-color:  #F13E3E;
+	box-shadow: 8px 8px 8px;
+	margin-left: 65px;
+
+}
+.para1:hover{
+	transform: scale(1.1);
+	transition-timing-function: ease;
+	transition-duration: 0.6s;
+}
+.carousel1:hover{
+	transform: scale(1.1);
+	transition-timing-function: ease;
+	transition-duration: 0.6s;
+}
+#para1head{
+	font-weight: bolder;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+#para1content{
+	font-size: 25px;
+	color: white;
+}
+.para2{
+	border: 8px solid #F13E3E;
+	background-color:  #F13E3E;
+	box-shadow: 8px 8px 8px;
+	margin-left: 37px;
+	
+
+}
+.para2:hover{
+	transform: scale(1.1);
+	transition-timing-function: ease;
+	transition-duration: 0.6s;
+	
+}
+.carousel2{
+	box-shadow: 8px 8px 8px;
+	margin-left: 30px;
+}
+.carousel2:hover{
+	transform: scale(1.1);
+	transition-timing-function: ease;
+	transition-duration: 0.6s;
+}
+#img1:hover,#img2:hover,#img3:hover{
+	animation: shake 0.5s; 
+	animation-iteration-count: infinite; 
+}
+#img4:hover,#img5:hover,#img6:hover{
+	animation: shake 0.5s; 
+	animation-iteration-count: infinite; 
+}
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+.stats{
+	background-color:#F13E3E;
+	color: white;
+	
+	
+}
+footer{
+	background-color:#F13E3E;
+	color: white;
+}
+.sendbtn{
+	background-color:black;
+	color:white;
+}
+.food-list{
+	height: 350px;
+	
+	box-shadow: 3px 3px 5px black;
+
+
+}
+.food-list:hover{
+	transform: scale(1.1);
+	transition-timing-function: ease;
+	transition-duration: 0.6s;
+	
+}
+.food-list-body{
+	box-shadow: none;
+	background: #F13E3E;
+	height: 80px;
+}
+.listbody{
+	background: #080808d5;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	background-position: center;
+}
+.input1{
+	width: 700px;
+	height: 40px;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+	font-weight: bold;
+}
+.searchbar{
+	margin: auto;
+	text-align: center;
+	padding: 10px;
+}
+.shakeimage{
+	margin-left:80px ;
+}
+.detailbody{
+	background: #080808d5;	
+}
+.detailimgbox{
+    margin-left:25px;
+    
+}
+.detailreviewbox{
+	background-color: #F13E3E;
+	color:white;
+	height:300px;
+	width:auto;
+	margin-right:25px;
+	border: 5px solid #F13E3E;
+    border-radius:20px;
+    box-shadow: 0px 0px 15px white;
+    font-size:23px;
+    font-family:dubai medium;
+}
+.detailreviewbox h2{
+	background: #080808d5;
+	border-radius:10px;
+	opacity:.85;
+}
+.imgborder1{
+	border: 5px solid #F13E3E;
+    border-radius:20px;
+    box-shadow: 0px 0px 15px white;
+	
+}
+.addressinfo{
+	height:355px;
+	width:auto;
+	margin-left:10px;
+	background-color: #F13E3E;
+	color:white;
+	border: 5px solid #F13E3E;
+    border-radius:20px;
+    box-shadow: 0px 0px 15px white;
+    font-size:23px;
+    font-family:dubai medium;
+}
+
+
+
+

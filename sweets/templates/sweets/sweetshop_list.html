@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="listbody">
+
+
+<!-- <div class="row p-5">
+{% for n1 in sweetshop_list %}
+<div class="col-sm-4 p-4">
+<div class="card">
+  <img class=" card-img-top p-2" src="/media/{{n1.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{n1.name}}</h5>
+     <h5 class="card-title">Stars={{n1.rating}}</h5>
+    
+    <a href="/sweets/sweetshop/{{n1.id}}" class="btn btn-secondary">know more</a>
+  </div>
+  </div>
+  </div>
+ {% endfor %} -->
+
+<!-- foodhub list -->
+
+
+<h1 class="w3-center h1about">
+<a href="/sweets/home/" style="float: left" class="w3-btn w3-white w3-border w3-round w3-medium" role="button" aria-pressed="true">Go Home.</a>
+Explore</h1>
+
+<!-- search bar -->
+<div class="row">
+
+  <div class="col-sm searchbar">
+    <form>
+      
+      <input class="input1" value="{{ request.GET.si }}" placeholder="Search by Name,City or Rating" type="text" name="si" />
+      <input class="btn btn-danger mx-3" type="submit" />
+
+    </form>
+    
+  </div>
+</div>
+<!-- searchbar end -->
+
+
+
+
+<div class="row p-4 ml-1">
+
+{% for n1 in sweetshop_list %}
+
+
+  <div class="col-sm-4 p-4">
+<div class="card w3-animate-top food-list" style="width: 25rem;height: 32rem;">
+  <img height="300px" width="200px" class="card-img-top" src="/media/{{n1.image}}" alt="Card image cap">
+  <div class="card-body food-list-body">
+   <h4 style="font-size:20px;color: white" class="card-text">Name:<i><strong> {{n1.name}}</strong></i></h4>
+   <h6 style="color: white;" class="card-text">Rating:<i> {{n1.rating}}</i></h6><br>
+   <p align="center"><a href="/sweets/sweetshop/{{n1.id}}" class="btn btn-secondary">know more</a></p>
+  </div>
+</div>
+</div>
+
+
+{% endfor %}
+</div>
+</div>
+
+{% endblock %}

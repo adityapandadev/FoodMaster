@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class = "detailbody">
+	<div style="height:60px;padding:6px;" class="row h1about">
+		<div class="col-6">
+		    <h1><b>{{ sweetshop.name }}</b></h1>
+		</div>
+		<div class="col-6">
+		
+			
+		     <h2 align="right"><b>{{ sweetshop.rating }}</b></h2>
+		</div>
+	</div>
+<br>
+
+
+<div class="row">
+   <div class="col-sm-4 p-1">
+		<div class = "detailimgbox">
+			<img class="imgborder1" src="/media/{{sweetshop.image}}" height="300px" width="380px"/>
+	    </div>
+   </div>
+   <div class="col-sm-8 p-1">
+	    <div class="detailreviewbox">
+	    <h2 id="h2" align="center">Review</h2>
+	    <p>{{ sweetshop.review }}</p>
+	    
+	    </div>
+   </div>
+</div>   <!-- row end -->
+<br>
+<!-- <div align = "center" class="buttonmodal">
+  <a href="/media/{{sweetshop.menu}}" class = "w3-button w3-red">
+     
+    Menu
+  </a>
+</div> -->
+
+<div align="center">
+ <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red">Menu</button>
+</div>
+  <div id="id01" class="w3-modal">
+     <div class="modalinside">
+	    <div align="center" class="w3-animate-zoom">
+	    
+	      
+	        <!-- <span onclick="document.getElementById('id01').style.display='none'" 
+	        class="w3-button w3-display-topright">&times;</span> -->
+	        <img src="/media/{{sweetshop.menu}}" height="450px" width="500px"/>
+	        <br>
+	        <br>
+	        <button class="w3-button w3-red">
+	        	<a href = "">Back</a>
+	        </button>
+	  
+	      </div>
+	      
+      
+  </div>
+</div>
+
+<br>
+<!-- 
+<div class="row">
+<div class="container h-100">
+<p>Contact no. ::{{ sweetshop.phone_no }}</p>
+<p>Adress ::{{ sweetshop.address }}</p>
+<p>Rating ::{{ sweetshop.rating }}</p> -->
+
+<h3 class="w3-center h1about">Address and Contact</h3>
+<br>
+<div class="addressbody">
+	<div class="row p-2">
+	   <div class ="col-sm-6 p-1">
+	      <div class="addressinfo">
+	      <br>
+	      <p>{{ sweetshop.address }}</p>
+	      <br>
+	      <p>{{ sweetshop.phone_no }}</p>
+	      <br>
+	      <p>{{ sweetshop.email }}</p>
+	      
+	      </div>
+	   </div>
+	   <div class="col-sm-6 p-1">
+				
+				<div style="height:355px;width:610px;border:5px solid #F13E3E;border-radius:20px;box-shadow: 0px 0px 15px white;">
+				
+				     <iframe style="height:345px;width:600px;border-radius:16px;"  src="https://www.google.com/maps/{{ sweetshop.map_link }}" frameborder="0" style="border:0" allowfullscreen></iframe>
+			
+				</div>
+		</div>
+	</div>
+
+
+</div>
+<br>
+
+
+
+<p align="center"><a href="/sweets/sweetshop/" class="btn w3-red btn-lg active" role="button" aria-pressed="true">back</a>
+</p>
+<br>
+</div>
+</div>
+</div>
+{% endblock %}
